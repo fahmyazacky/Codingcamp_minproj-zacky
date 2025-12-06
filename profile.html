@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Profile - Mini Project</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="font-sans bg-slate-50 min-h-screen">
+
+  <header class="bg-white shadow-sm">
+    <nav class="max-w-5xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-sky-700">MiniProject</a>
+
+      <ul class="flex gap-6">
+        <li><a href="index.html" class="text-slate-700 hover:text-sky-700">Beranda</a></li>
+        <li><a href="profile.html" class="text-sky-700 font-medium">Our Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 md:px-6 py-10">
+    <article class="bg-white p-6 rounded-2xl shadow">
+      <h1 class="text-3xl font-bold text-slate-800 mb-2">Tentang Perusahaan</h1>
+      <p class="text-slate-600 mb-4">Kami adalah organisasi yang bergerak di bidang teknologi informasi dan solusi digital. Berikut profil singkat kami.</p>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h2 class="font-semibold text-slate-800 mb-2">Visi</h2>
+          <p class="text-slate-600">Menjadi penyedia solusi digital yang andal dan berdampak di kawasan.</p>
+        </div>
+
+        <div>
+          <h2 class="font-semibold text-slate-800 mb-2">Misi</h2>
+          <ul class="list-disc ml-5 text-slate-600 space-y-1">
+            <li>Menyediakan layanan IT berkualitas</li>
+            <li>Mengembangkan produk yang bermanfaat bagi masyarakat</li>
+            <li>Mengedukasi talenta digital masa depan</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="font-semibold text-slate-800 mb-2">Kontak</h2>
+        <p class="text-slate-600">Email: info@perusahaan.example | Telp: 0812xxxx</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="py-6 text-center text-sm text-slate-600 border-t">
+    &copy; <span id="year2"></span> MiniProject - Fahmyazacky.
+  </footer>
+
+  <script>
+    // set tahun footer
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
